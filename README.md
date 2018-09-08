@@ -1,1 +1,1 @@
-"# hyper-candy" 
+# hyper-candy

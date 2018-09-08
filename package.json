@@ -1,0 +1,25 @@
+{
+  "name": "hyper-candy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "syntax": "node --check *.js",
+    "test": "npm run syntax"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dakedres/hyper-candy.git"
+  },
+  "keywords": [
+    "hyper",
+    "hyperterm",
+    "hyper.app"
+  ],
+  "author": "Dakedres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dakedres/hyper-candy/issues"
+  },
+  "homepage": "https://github.com/Dakedres/hyper-candy#readme"
+}
