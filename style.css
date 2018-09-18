@@ -1,0 +1,99 @@
+.header_windowHeader:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.1;
+  content: " ";
+  opacity: 0.13;
+}
+
+.header_closeWindow:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.1;
+  content: " ";
+}
+
+.header_closeWindow:not(:hover):before {
+  opacity: 0;
+}
+
+.header_windowHeader, .tab_tab, .tabs_list {
+  border: none;
+}
+
+.tab_tab {
+  overflow: hidden;
+}
+
+.tab_tab:hover .tab_icon {
+  right: 0;
+}
+
+.tab_tab:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.1;
+  content: " ";
+  opacity: 0.056;
+}
+
+.tab_tab.tab_active:before {
+  opacity: 0.13;
+}
+
+.tab_tab > .tab_icon {
+  top: 0;
+  right: -34px;
+  height: 34px;
+  width: 34px;
+  transition: right 0.21s ease-in-out;
+  background: transparent;
+  transform: none;
+  border-radius: 0;
+  opacity: 1;
+}
+
+.tab_tab > .tab_icon:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.1;
+  content: " ";
+  transition: opacity 0.19s ease-in-out;
+}
+
+.tab_tab > .tab_icon:not(:hover):before {
+  opacity: 0;
+}
+
+.tab_tab > .tab_icon:hover svg {
+  fill: #bbb;
+}
+
+.tab_tab > .tab_icon svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30%;
+}
+
+.hyper_main {
+  letter-spacing: 1px;
+}

@@ -21,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/Dakedres/hyper-candy/issues"
   },
-  "homepage": "https://github.com/Dakedres/hyper-candy#readme"
+  "homepage": "https://github.com/Dakedres/hyper-candy#readme",
+  "dependencies": {}
 }
