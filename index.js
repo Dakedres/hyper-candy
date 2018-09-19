@@ -34,7 +34,7 @@ exports.decorateConfig = config => Object.assign(config, {
   selectionColor,
 
   fontWeight: 'normal',
-  fontSize: 12,
+  fontSize: 11,
   
   css: `
     ${config.css || ''}
