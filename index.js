@@ -1,19 +1,12 @@
 const fs = require('fs'),
       path = require('path');
 
-const primary = '#ff3366',
-      secondary = '#3399ff',
-      backgroundColor = '#181b1d',
-      // backgroundColor = '#141618',
-      foregroundColor = '#fdfdff',
-      selectionColor = '#121315';
-
 const colors = {
   black: '#08090a',
-  red: primary,
+  red: '#ff3366',
   green: '#5fffaf',
   yellow: '#ffd94c',
-  blue: secondary,
+  blue: '#3399ff',
   magenta: '#a764ff',
   cyan: '#98d7f8',
   white: '#f9f9ff',
@@ -27,6 +20,12 @@ const colors = {
   lightWhite: '#fefeff'
 }
 
+const primary = colors.red,
+      secondary = colors.blue,
+      backgroundColor = '#181b1d',
+      foregroundColor = '#fdfdff',
+      selectionColor = '#121315';
+
 exports.decorateConfig = config => Object.assign(config, {
   colors,
   backgroundColor,
@@ -36,16 +35,10 @@ exports.decorateConfig = config => Object.assign(config, {
 
   fontWeight: 'normal',
   fontSize: 12,
-
-  transparentBg: { WebkitFilter: 'blur(5px)', opacity: '0.3' },
   
   css: `
     ${config.css || ''}
 
-    ${fs.readFileSync(path.join(__dirname, 'style.css'))}
-
-    
+    ${fs.readFileSync(path.join(__dirname, 'style.css'))} 
   `
-
-  //${config.cozy ? fs.readFileSync(path.join(__dirname, 'cozy.css')) : ''}
 });
